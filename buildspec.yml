@@ -6,7 +6,7 @@ phases:
   build:
     commands:
       - echo "Entered build phase"
-      - gradle clean war
+      - gradle clean build
   post_build:
     commands:
       - echo "Entered the post-build phase"
