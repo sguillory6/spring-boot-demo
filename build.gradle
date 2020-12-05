@@ -23,3 +23,8 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+task explodedWar(type: Sync) {
+	into "${buildDir}/exploded"
+	with war
+}
