@@ -6,11 +6,11 @@ phases:
   build:
     commands:
       - echo "Entered build phase"
-      - gradle clean war war:exploded
+      - gradle clean war
   post_build:
     commands:
       - echo "Entered the post-build phase"
-      - mv target/deploy ./
+      - gradle war:exploded
 artifacts:
   files:
     - build/exploded/**/*

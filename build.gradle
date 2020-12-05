@@ -25,6 +25,7 @@ test {
 }
 
 task explodedWar(type: Sync) {
+	dependsOn bootWar
 	into "${buildDir}/exploded"
 	with war
 }
