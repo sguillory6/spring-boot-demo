@@ -13,4 +13,6 @@ phases:
       - gradle explodedWar
 artifacts:
   files:
-    - build/exploded/**/*
+    - '**/*'
+  base-directory: build/exploded
+  discard-paths: no
